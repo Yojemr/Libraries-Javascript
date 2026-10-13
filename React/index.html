@@ -1,0 +1,850 @@
+<!--
+1. Index con tarjeta de presentación profesional
+2. 6 tarjetas con enlaces a las features
+3. Aplicar buenas prácticas y Bootstrap
+4. Cargar las features dentro del index sin cambiar de página
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Página principal del proyecto"
+    >
+
+    <title>Mi Proyecto</title>
+
+
+    <!-- Bootstrap CDN -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    >
+
+
+    <!-- Bootstrap Icons CDN -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+
+    <!-- CSS propio -->
+    <link
+        rel="stylesheet"
+        href="./shared/css/stylesheet.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================= -->
+    <!-- NAVEGACIÓN -->
+    <!-- ========================= -->
+
+    <nav class="navbar navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a
+                class="navbar-brand fw-bold"
+                href="./index.html"
+            >
+                Mi Proyecto
+            </a>
+
+
+            <a
+                class="btn btn-outline-light"
+                href="#features"
+            >
+                Features
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ========================= -->
+    <!-- CONTENIDO PRINCIPAL -->
+    <!-- ========================= -->
+
+    <main>
+
+
+        <!-- ========================= -->
+        <!-- PRESENTACIÓN -->
+        <!-- ========================= -->
+
+        <section class="container py-5">
+
+            <div class="card presentacion shadow rounded-4">
+
+                <div class="card-body p-5">
+
+                    <div class="row align-items-center">
+
+
+                        <!-- Foto de perfil -->
+
+                        <div
+                            class="col-md-4 text-center mb-4 mb-md-0"
+                        >
+
+                            <img
+                                src="https://randomuser.me/api/portraits/men/32.jpg"
+                                alt="Foto de perfil de Nombre Apellido"
+                                class="foto-perfil"
+                            >
+
+                        </div>
+
+
+                        <!-- Información -->
+
+                        <div class="col-md-8">
+
+                            <span class="badge bg-primary mb-2">
+                                DESARROLLADOR WEB
+                            </span>
+
+
+                            <h1 class="display-5 fw-bold">
+                                Nombre Apellido
+                            </h1>
+
+
+                            <p class="lead text-secondary">
+
+                                Desarrollador web enfocado en crear
+                                aplicaciones modernas, funcionales
+                                y fáciles de utilizar.
+
+                            </p>
+
+
+                            <p>
+
+                                Este proyecto contiene diferentes
+                                funcionalidades desarrolladas utilizando
+                                HTML, CSS, JavaScript y Bootstrap.
+
+                            </p>
+
+
+                            <a
+                                href="#features"
+                                class="btn btn-primary"
+                            >
+
+                                Ver funcionalidades
+
+                                <i
+                                    class="bi bi-arrow-down-circle ms-1"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- FEATURES -->
+        <!-- ========================= -->
+
+        <section
+            id="features"
+            class="container p-5 shadow bg-white rounded-4"
+        >
+
+
+            <div class="text-center mb-5">
+
+                <h2 class="fw-bold">
+                    Funcionalidades
+                </h2>
+
+                <p class="text-secondary">
+
+                    Selecciona una de las siguientes
+                    funcionalidades.
+
+                </p>
+
+            </div>
+
+
+
+            <!--
+                AQUÍ SE CARGARÁ EL CONTENIDO
+                DE LAS FEATURES
+            -->
+
+            <div
+                id="feature-content"
+                class="mb-5"
+            ></div>
+
+
+
+            <!-- ========================= -->
+            <!-- TARJETAS -->
+            <!-- ========================= -->
+
+            <div class="row g-4">
+
+
+                <!-- ========================= -->
+                <!-- FEATURE 1 -->
+                <!-- ========================= -->
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div
+                        class="card feature-card shadow-sm rounded-4 h-100"
+                    >
+
+                        <div class="card-body text-center p-4">
+
+
+                            <div class="feature-icon mb-3">
+
+                                <i
+                                    class="bi bi-person-circle fs-1 text-primary"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </div>
+
+
+                            <h3 class="h5 fw-bold">
+                                Feature 1
+                            </h3>
+
+
+                            <p class="text-secondary">
+
+                                Gestión de información mediante
+                                operaciones CRUD.
+
+                            </p>
+
+
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                onclick="cargarFeature('./src/features/crud/crud.html')"
+                            >
+
+                                Ver feature
+
+                                <i
+                                    class="bi bi-arrow-right ms-1"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ========================= -->
+                <!-- FEATURE 2 -->
+                <!-- ========================= -->
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div
+                        class="card feature-card shadow-sm rounded-4 h-100"
+                    >
+
+                        <div class="card-body text-center p-4">
+
+
+                            <div class="feature-icon mb-3">
+
+                                <i
+                                    class="bi bi-bar-chart-fill fs-1 text-primary"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </div>
+
+
+                            <h3 class="h5 fw-bold">
+                                Feature 2
+                            </h3>
+
+
+                            <p class="text-secondary">
+
+                                Visualización y análisis
+                                de información.
+
+                            </p>
+
+
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                onclick="cargarFeature('./feature2.html')"
+                            >
+
+                                Ver feature
+
+                                <i
+                                    class="bi bi-arrow-right ms-1"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ========================= -->
+                <!-- FEATURE 3 -->
+                <!-- ========================= -->
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div
+                        class="card feature-card shadow-sm rounded-4 h-100"
+                    >
+
+                        <div class="card-body text-center p-4">
+
+
+                            <div class="feature-icon mb-3">
+
+                                <i
+                                    class="bi bi-gear-fill fs-1 text-primary"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </div>
+
+
+                            <h3 class="h5 fw-bold">
+                                Feature 3
+                            </h3>
+
+
+                            <p class="text-secondary">
+
+                                Configuración y administración
+                                del sistema.
+
+                            </p>
+
+
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                onclick="cargarFeature('./feature3.html')"
+                            >
+
+                                Ver feature
+
+                                <i
+                                    class="bi bi-arrow-right ms-1"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ========================= -->
+                <!-- FEATURE 4 -->
+                <!-- ========================= -->
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div
+                        class="card feature-card shadow-sm rounded-4 h-100"
+                    >
+
+                        <div class="card-body text-center p-4">
+
+
+                            <div class="feature-icon mb-3">
+
+                                <i
+                                    class="bi bi-shield-lock-fill fs-1 text-primary"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </div>
+
+
+                            <h3 class="h5 fw-bold">
+                                Feature 4
+                            </h3>
+
+
+                            <p class="text-secondary">
+
+                                Seguridad y control
+                                de acceso.
+
+                            </p>
+
+
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                onclick="cargarFeature('./feature4.html')"
+                            >
+
+                                Ver feature
+
+                                <i
+                                    class="bi bi-arrow-right ms-1"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ========================= -->
+                <!-- FEATURE 5 -->
+                <!-- ========================= -->
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div
+                        class="card feature-card shadow-sm rounded-4 h-100"
+                    >
+
+                        <div class="card-body text-center p-4">
+
+
+                            <div class="feature-icon mb-3">
+
+                                <i
+                                    class="bi bi-lightbulb-fill fs-1 text-primary"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </div>
+
+
+                            <h3 class="h5 fw-bold">
+                                Feature 5
+                            </h3>
+
+
+                            <p class="text-secondary">
+
+                                Herramientas y soluciones
+                                adicionales.
+
+                            </p>
+
+
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                onclick="cargarFeature('./feature5.html')"
+                            >
+
+                                Ver feature
+
+                                <i
+                                    class="bi bi-arrow-right ms-1"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ========================= -->
+                <!-- FEATURE 6 -->
+                <!-- ========================= -->
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div
+                        class="card feature-card shadow-sm rounded-4 h-100"
+                    >
+
+                        <div class="card-body text-center p-4">
+
+
+                            <div class="feature-icon mb-3">
+
+                                <i
+                                    class="bi bi-rocket-takeoff-fill fs-1 text-primary"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </div>
+
+
+                            <h3 class="h5 fw-bold">
+                                Feature 6
+                            </h3>
+
+
+                            <p class="text-secondary">
+
+                                Funcionalidades avanzadas
+                                del proyecto.
+
+                            </p>
+
+
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                onclick="cargarFeature('./feature6.html')"
+                            >
+
+                                Ver feature
+
+                                <i
+                                    class="bi bi-arrow-right ms-1"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer class="bg-dark text-white text-center py-4 mt-4">
+
+        <div class="container">
+
+            <p class="mb-0">
+                &copy; 2026 Mi Proyecto
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JS CDN -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+
+
+    <!-- ========================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ========================= -->
+
+    <script>
+
+        async function cargarFeature(archivo) {
+
+            const contenedor =
+                document.getElementById("feature-content");
+
+
+            contenedor.innerHTML = `
+
+                <div class="text-center py-4">
+
+                    <div
+                        class="spinner-border text-primary"
+                        role="status"
+                    >
+
+                        <span class="visually-hidden">
+                            Cargando...
+                        </span>
+
+                    </div>
+
+                    <p class="text-secondary mt-2">
+                        Cargando funcionalidad...
+                    </p>
+
+                </div>
+
+            `;
+
+
+            try {
+
+                console.log(
+                    "Intentando cargar:",
+                    archivo
+                );
+
+
+                const respuesta =
+                    await fetch(archivo);
+
+
+                console.log(
+                    "Status:",
+                    respuesta.status
+                );
+
+
+                console.log(
+                    "URL:",
+                    respuesta.url
+                );
+
+
+                if (!respuesta.ok) {
+
+                    throw new Error(
+                        "HTTP " +
+                        respuesta.status +
+                        " - " +
+                        respuesta.statusText
+                    );
+
+                }
+
+
+                const contenido =
+                    await respuesta.text();
+
+
+                console.log(
+                    "Contenido cargado correctamente."
+                );
+
+
+                contenedor.innerHTML = `
+
+                    <div
+                        class="card shadow border-primary rounded-4"
+                    >
+
+                        <div class="card-body p-4">
+
+
+                            <div
+                                class="d-flex justify-content-between align-items-center mb-4"
+                            >
+
+                                <h2 class="h4 mb-0">
+
+                                    <i
+                                        class="bi bi-window-stack me-2 text-primary"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                    Funcionalidad
+
+                                </h2>
+
+
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-danger btn-sm"
+                                    onclick="cerrarFeature()"
+                                >
+
+                                    <i
+                                        class="bi bi-x-lg me-1"
+                                        aria-hidden="true"
+                                    ></i>
+
+                                    Cerrar
+
+                                </button>
+
+                            </div>
+
+
+                            ${contenido}
+
+
+                        </div>
+
+                    </div>
+
+                `;
+
+
+                // Iniciar el CRUD después de insertar su HTML
+
+                if (
+                    archivo.includes("crud.html") &&
+                    typeof iniciarCRUD === "function"
+                ) {
+
+                    iniciarCRUD();
+
+                }
+
+
+                // Llevar al usuario hacia el contenido
+
+                contenedor.scrollIntoView({
+
+                    behavior: "smooth",
+
+                    block: "start"
+
+                });
+
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Error cargando feature:",
+                    error
+                );
+
+
+                contenedor.innerHTML = `
+
+                    <div
+                        class="alert alert-danger"
+                        role="alert"
+                    >
+
+                        <h5 class="alert-heading">
+
+                            <i
+                                class="bi bi-exclamation-triangle-fill me-2"
+                                aria-hidden="true"
+                            ></i>
+
+                            No se pudo cargar la funcionalidad
+
+                        </h5>
+
+
+                        <hr>
+
+
+                        <p class="mb-2">
+
+                            <strong>
+                                Archivo solicitado:
+                            </strong>
+
+                            <br>
+
+                            ${archivo}
+
+                        </p>
+
+
+                        <p class="mb-0">
+
+                            <strong>
+                                Error:
+                            </strong>
+
+                            <br>
+
+                            ${error.message}
+
+                        </p>
+
+                    </div>
+
+                `;
+
+            }
+
+        }
+
+
+
+        function cerrarFeature() {
+
+            const contenedor =
+                document.getElementById("feature-content");
+
+
+            contenedor.innerHTML = "";
+
+        }
+
+    </script>
+
+
+    <!-- CRUD JS -->
+    <script src="src/features/crud/crud.js"></script>
+
+</body>
+
+</html>
