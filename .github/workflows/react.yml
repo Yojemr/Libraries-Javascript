@@ -1,0 +1,27 @@
+name: React checks
+on:
+  push:
+    paths:
+      - 'React/App-React/**'
+      - '.github/workflows/react.yml'
+  pull_request:
+    paths:
+      - 'React/App-React/**'
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: React/App-React
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: React/App-React/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build
