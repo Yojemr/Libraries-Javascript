@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="React Lab">
+  <rect width="512" height="512" rx="108" fill="#101e34"/>
+  <g fill="none" stroke="#8ee9ef" stroke-width="18">
+    <ellipse cx="256" cy="256" rx="188" ry="73"/>
+    <ellipse cx="256" cy="256" rx="188" ry="73" transform="rotate(60 256 256)"/>
+    <ellipse cx="256" cy="256" rx="188" ry="73" transform="rotate(120 256 256)"/>
+  </g>
+  <circle cx="256" cy="256" r="31" fill="#8ee9ef"/>
+</svg>

@@ -1,13 +1,11 @@
-function FeatureCard({ id, icon, title, description, children }) {
+function FeatureCard({ number, title, description, code }) {
   return (
-    <div id={id} className="landing-feature-card">
-      <svg className="icon" aria-hidden="true">
-        <use href={`/icons.svg#${icon}`} />
-      </svg>
-      <h2>{title}</h2>
+    <article className="feature-card">
+      <span className="feature-number">{number}</span>
+      <h3>{title}</h3>
       <p>{description}</p>
-      {children}
-    </div>
+      <code className="feature-code">{code}</code>
+    </article>
   )
 }
 

@@ -2,7 +2,7 @@ import Landing from './features/landing/Landing.jsx'
 import './App.css'
 
 function App() {
-  return <Landing />
+  return <div className="app-shell"><Landing /></div>
 }
 
 export default App
